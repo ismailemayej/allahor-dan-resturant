@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = () => {
+const Navbar = () => {
   return (
     <div className="navbar bg-opacity-40 fixed max-w-screen-xl rounded-b-lg text-white bg-black">
       <div className="navbar-start">
@@ -47,27 +47,7 @@ const Header = () => {
         <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li tabIndex={0}>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
-        </ul>
+        <ul className="menu menu-horizontal px-1">------------------</ul>
       </div>
       <div className="navbar-end">
         <a className="btn">Button</a>
@@ -76,4 +56,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;
