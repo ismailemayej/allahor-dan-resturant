@@ -4,7 +4,7 @@ import background from "../../../assets/home/chef-service.jpg";
 const Chef = () => {
   return (
     <div
-      className="p-14 rounded-md my-12"
+      className="p-14 rounded-md my-12 bg-fixed"
       style={{ backgroundImage: `url(${background})` }}
     >
       <div className="bg-white m-14 text-center p-14 rounded-md">

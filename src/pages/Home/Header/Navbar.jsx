@@ -1,6 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const navOption = (
+    <>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/menu">Our Menu</Link>
+      </li>
+      <li>Items</li>
+    </>
+  );
   return (
     <div className="navbar bg-opacity-40 fixed max-w-screen-xl rounded-b-lg text-white bg-black">
       <div className="navbar-start">
@@ -47,7 +59,7 @@ const Navbar = () => {
         <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">------------------</ul>
+        <ul className="menu menu-horizontal px-1">{navOption}</ul>
       </div>
       <div className="navbar-end">
         <a className="btn">Button</a>

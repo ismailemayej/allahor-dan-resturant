@@ -18,7 +18,9 @@ const ChefRecoment = () => {
             <h2 className="card-title">Caeser Salad</h2>
             <p>This is very testy food</p>
             <div className="card-actions justify-center">
-              <button className="btn btn-primary ">Add To Cart</button>
+              <button className="btn btn-outline border border-b-4">
+                Add To Cart
+              </button>
             </div>
           </div>
         </div>
@@ -30,7 +32,9 @@ const ChefRecoment = () => {
             <h2 className="card-title">Caeser Salad</h2>
             <p>This is very testy food</p>
             <div className="card-actions justify-center">
-              <button className="btn btn-primary ">Add To Cart</button>
+              <button className="btn btn-outline border border-b-4">
+                Add To Cart
+              </button>
             </div>
           </div>
         </div>
@@ -42,7 +46,9 @@ const ChefRecoment = () => {
             <h2 className="card-title">Caeser Salad</h2>
             <p>This is very testy food</p>
             <div className="card-actions justify-center">
-              <button className="btn btn-primary ">Add To Cart</button>
+              <button className="btn btn-outline border border-b-4">
+                Add To Cart
+              </button>
             </div>
           </div>
         </div>
