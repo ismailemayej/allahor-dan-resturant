@@ -26,17 +26,16 @@ const Menu = () => {
       <Helmet>
         <title>Allahor dan Menu</title>
       </Helmet>
-      <Navbar></Navbar>
 
       <Cover className="h-[300px]" img={coversimg} title="Our Menu"></Cover>
       {/* offer menu items */}
       <SectionTitle heading={"Todays Offer"} subheading={"Donts Miss"} />
       <MenuCategory items={offered}></MenuCategory>
       {/* Desserets menu items */}
-      <MenuCategory items={dessert} title="Dessert" img={Dimg} />
-      <MenuCategory items={pizza} title="Pizza" img={Pimg} />
-      <MenuCategory items={soup} title="Soup" img={Simg} />
-      <MenuCategory items={salad} title="Salat" img={Saimg} />
+      <MenuCategory items={dessert} title="dessert" img={Dimg} />
+      <MenuCategory items={pizza} title="pizza" img={Pimg} />
+      <MenuCategory items={soup} title="soup" img={Simg} />
+      <MenuCategory items={salad} title="salad" img={Saimg} />
       <MenuCategory items={drinks} title="drinks" img={Drimg} />
     </div>
   );

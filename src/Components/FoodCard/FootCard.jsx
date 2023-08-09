@@ -4,7 +4,7 @@ const FootCard = ({ items }) => {
   const { name, image, recipe, price } = items;
   return (
     <div>
-      <div className="border card w-[100%] h-[100%] my-10 card-compact bg-base-100 shadow-xl">
+      <div className="border card w-[80%] h-[80%] my-10 card-compact bg-base-100 shadow-xl">
         <figure>
           <img className="w-full" src={image} />
         </figure>
