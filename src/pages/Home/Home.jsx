@@ -16,7 +16,7 @@ const Home = () => {
       </Helmet>
 
       <Banner></Banner>
-      <Navbar></Navbar>
+
       <Catrgory></Catrgory>
       <Chef></Chef>
       <PupolerMenu></PupolerMenu>
