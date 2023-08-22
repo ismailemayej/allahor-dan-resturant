@@ -1,6 +1,10 @@
 import React from "react";
 
 const FootCard = ({ items }) => {
+  const handleFoodCart = (item) => {
+    console.log(item);
+  };
+
   const { name, image, recipe, price } = items;
   return (
     <div>
@@ -17,7 +21,10 @@ const FootCard = ({ items }) => {
           </div>
           <p>{recipe}</p>
           <div className="card-actions justify-center">
-            <button className="btn btn-outline border border-b-4">
+            <button
+              onClick={() => handleFoodCart(items.name)}
+              className="btn btn-outline border border-b-4"
+            >
               Add To Cart
             </button>
           </div>

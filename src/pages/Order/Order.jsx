@@ -36,6 +36,7 @@ const Order = () => {
           <Tab>Drinks</Tab>
         </TabList>
         {/* for Salad */}
+
         <TabPanel>
           <div className="grid grid-cols-3 contain sm:grid-cols-1 md:grid-cols-3">
             {Salad.map((s) => (

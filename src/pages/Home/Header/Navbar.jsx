@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
+  const { user, LogOut } = useContext(AuthContext);
+  const HandleLogOut = () => {
+    LogOut().then((result) => {
+      Swal.fire("LogOut Successfully");
+      console.log(result);
+    });
+  };
+  console.log("user", user);
   const navOption = (
-    <>
+    <div className="flex justify-center">
       <li>
         <Link to="/">Home</Link>
       </li>
@@ -13,7 +23,23 @@ const Navbar = () => {
       <li>
         <Link to="/order">Order</Link>
       </li>
-    </>
+
+      {user ? (
+        <li onClick={HandleLogOut} className="btn btn-ghost">
+          LogOut
+        </li>
+      ) : (
+        <Link to="/login">
+          <li className="btn btn-ghost">LogIn/SignUp</li>
+        </Link>
+      )}
+      <li>
+        <Link to="/" className="">
+          Inbox
+          <div className="badge badge-secondary">+99</div>
+        </Link>
+      </li>
+    </div>
   );
   return (
     <div className="navbar bg-opacity-40 fixed max-w-screen-xl rounded-b-lg text-white bg-black">
