@@ -3,16 +3,18 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import { FiShoppingCart } from "react-icons/fi";
+import useCart from "../../../Hooks/UserCart";
 
 const Navbar = () => {
   const { user, LogOut } = useContext(AuthContext);
+  const [cart] = useCart();
   const HandleLogOut = () => {
     LogOut().then((result) => {
       Swal.fire("LogOut Successfully");
       console.log(result);
     });
   };
-  console.log("user", user);
+
   const navOption = (
     <div className="flex justify-center">
       <li>
@@ -37,7 +39,7 @@ const Navbar = () => {
       <li>
         <Link to="/" className="">
           <FiShoppingCart />
-          <div className="badge badge-secondary">+99</div>
+          <div className="badge badge-secondary">{cart?.length || 0}</div>
         </Link>
       </li>
     </div>
