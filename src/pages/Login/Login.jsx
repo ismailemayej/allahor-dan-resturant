@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import {
   loadCaptchaEnginge,
   LoadCanvasTemplate,
-  validateCaptcha,
+  validateCaptcha, 
 } from "react-simple-captcha";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
